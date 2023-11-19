@@ -37,7 +37,7 @@ Enfin, la dernière interface est dédiée à la recherche. Elle permet aux util
 ![rech et ex](https://github.com/sana7867/-inscriptions-des--tudiants-en-cycle-d-ing-nieur/assets/147515885/9b9c457d-73b8-4fd9-8551-895b939dee05)
 
 # installation :
-Clônez ce dépôt sur votre machine locale.
+1. Clônez ce dépôt sur votre machine locale.
 
 https://github.com/sana7867/-inscriptions-des--tudiants-en-cycle-d-ing-nieur.git
 
