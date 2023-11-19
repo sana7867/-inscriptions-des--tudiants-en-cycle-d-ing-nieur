@@ -2,8 +2,12 @@
 Application gestion base de données: 
 L'objectif principal de cette application est de superviser les inscriptions des étudiants en cycle d'ingénieur au sein de notre école. Le code sous-jacent est initialement rédigé en JavaScript, garantissant ainsi une flexibilité et une compatibilité avec les environnements d'exécution courants.
 
+![WhatsApp Image 2023-11-19 at 12 15 47](https://github.com/sana7867/-inscriptions-des--tudiants-en-cycle-d-ing-nieur/assets/147515885/1ab3ffe5-2aa4-4be5-95b9-7539accfab97)
+
 # Interface d'ajout :
 Cette première interface permet d'ajouter de nouvelles inscriptions d'étudiants en cycle d'ingénieur. Les informations pertinentes peuvent être saisies et enregistrées grâce à cette fonctionnalité.
+
+![WhatsApp Image 2023-11-19 at 12 15 30](https://github.com/sana7867/-inscriptions-des--tudiants-en-cycle-d-ing-nieur/assets/147515885/0176c7f4-e6ca-465f-be09-e17d6cf56a20)
 
 ![aj exp](https://github.com/sana7867/-inscriptions-des--tudiants-en-cycle-d-ing-nieur/assets/147515885/f52b2bee-8a14-4829-8f23-1d881048aef7)
 
@@ -31,5 +35,7 @@ Enfin, la dernière interface est dédiée à la recherche. Elle permet aux util
 ![rech rest](https://github.com/sana7867/-inscriptions-des--tudiants-en-cycle-d-ing-nieur/assets/147515885/c2f633a4-86d3-4975-8fbc-390df226cf46)
 
 ![rech et ex](https://github.com/sana7867/-inscriptions-des--tudiants-en-cycle-d-ing-nieur/assets/147515885/9b9c457d-73b8-4fd9-8551-895b939dee05)
+
+
 
 
