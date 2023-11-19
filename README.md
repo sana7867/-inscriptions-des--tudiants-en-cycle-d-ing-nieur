@@ -1,4 +1,4 @@
-# -inscriptions-des-etudiants-en-cycle-d-ingenieur
+# Inscriptions des etudiants en cycle d'ingenieur
 Application gestion base de données: 
 L'objectif principal de cette application est de superviser les inscriptions des étudiants en cycle d'ingénieur au sein de notre école. Le code sous-jacent est initialement rédigé en JavaScript, garantissant ainsi une flexibilité et une compatibilité avec les environnements d'exécution courants.
 
