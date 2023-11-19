@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>État de l'étudiant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* CSS inclus dans le fichier HTML pour l'exemple */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Gris clair pour le fond */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header, footer {
+            background-color: #007bff; /* Bleu */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        #searchForm, #resultsForm {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        input, button {
+            margin: 10px 0;
+            padding: 10px;
+            width: calc(100% - 22px); /* 100% - padding (left + right) */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>État de l'étudiant</h1>
+    </header>
+
+    <form id="searchForm">
+        <input type="text" id="firstNameSearch" placeholder="Prénom" required>
+        <input type="text" id="lastNameSearch" placeholder="Nom" required>
+        <button type="submit">Rechercher</button>
+    </form>
+
+    <h2>Résultats:</h2>
+    <form id="resultsForm" style="display: none;">
+        <label for="studentId">ID</label>
+        <input type="text" id="studentId" placeholder="ID Étudiant" readonly>
+        <label for="studentDepartment">Departement</label>
+        <input type="text" id="studentDepartment" placeholder="Département" readonly>
+        <label for="studentYear">Année</label>
+        <input type="text" id="studentYear" placeholder="Année" readonly>
+        <button type="button" id="showState">État</button>
+    </form>
+
+    
+
+    <script src="js/chercher.js" > </script>
+</body>
+<footer>
+    <p>2023 État de l'étudiant</p>
+</footer>
+</html>

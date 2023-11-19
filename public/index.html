@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+ <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #ffffff; /* White background */
+        color: #333; /* Dark text color */
+    }
+
+
+
+    .header {
+        background-color: #007bff; /* Blue header background */
+        color: #ffffff; /* White text color */
+        padding: 20px;
+        text-align: center;
+    }
+    .hero {
+        background: url('https://www.kark.com/wp-content/uploads/sites/85/2021/02/classroom_1542034403442_61914801_ver1.0.jpg?strip=1'); /* Hero section background image */
+        background-size: cover;
+        background-position: center;
+        height: 300px; /* Adjust the height of the hero section */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff; /* White text color */
+        text-align: center;
+    }
+
+    .footer {
+        background-color: #007bff; /* Blue footer background */
+        color: #ffffff; /* White text color */
+        padding: 10px 0;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #ffffff; /* White container background */
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    form {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    input[type="text"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        border: 1px solid #007bff; /* Blue border for input fields */
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    button {
+        background-color: #007bff; /* Blue button background */
+        color: #ffffff; /* White button text color */
+        border: none;
+        padding: 12px 24px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 18px;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #093666; /* Darker blue on hover */
+    }
+    nav {
+    background-color: #333333; /* Couleur de fond */
+    overflow: hidden; /* Cache le contenu débordant */
+}
+
+nav ul {
+    list-style-type: none; /* Enlève les puces */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    float: left; /* Pour aligner les éléments horizontalement */
+}
+
+nav ul li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+    color: rgb(111, 148, 196);
+}
+
+/* Pour les écrans plus petits, vous pouvez ajouter un menu hamburger ou un menu déroulant */
+@media screen and (max-width: 600px) {
+    nav ul li {
+        float: none;
+    }
+}
+
+ </style>
+</head>
+<body>
+
+    <div class="header">
+        <img class="logo" src="data:image/png;base64,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" alt="Logo">
+        <h2>Formulaire d'inscription</h2>
+       
+        <nav>
+            <ul>
+                <li><a href="http://localhost:3000/Annee.html">Etudiants par année</a></li>
+                <li><a href="http://localhost:3000/Filtrer.html">Etudiants par filière</a></li>
+                <li><a href="http://localhost:3000/chercher.html">Chercher un étudiant</a></li>
+            </ul>
+        </nav>
+        
+    </div>
+        <div class="hero">
+        <h1>Bienvenue à ENSA El Jadida</h1>
+    </div>
+    <div class="container">
+      <form id="studentForm">
+        <label for="firstName">Prénom:</label>
+        <input type="text" id="firstName" name="firstName"  required><br>
+        <label for="lastName">Nom:</label>
+        <input type="text" id="lastName" name="lastName" required><br>
+        <label for="year">Année:</label>
+        <select id="year" name="year" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select><br><br>
+        <label for="department">Département:</label>
+        <input type="text" id="department" name="department"  required><br>
+        <button type="submit">Enregistrer</button>
+      </form>
+
+      <!-- <br><a href="">Voir la liste des étudiants</a><br> -->
+        <script src="js/script.js"> </script>
+    </div>
+    <div class="footer">
+        Formulaire ENSAJ
+    </div>
+</body>
+   
+</html>

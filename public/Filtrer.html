@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>État de l'étudiant</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Gris clair pour le fond */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            justify-content: center;
+            padding-top: 50px; /* Espace pour le header */
+            padding-bottom: 50px; /* Espace pour le footer */
+        }
+
+        header, footer {
+            background-color: #007bff; /* Bleu */
+            color: white;
+            padding: 10px 20px;
+            width: 100%;
+            position: fixed;
+            left: 0;
+        }
+
+        header {
+            top: 0;
+        }
+
+        footer {
+            bottom: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px; /* Largeur maximale du conteneur */
+            margin: auto;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        input, button {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%; /* Prend toute la largeur disponible */
+            box-sizing: border-box; /* Inclut padding dans la largeur */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Rechercher l'état de l'étudiant</h1>
+    </header>
+
+    <div class="container">
+        <form id="searchByDepartmentForm">
+            <input type="text" id="departmentSearch" placeholder="Département" required>
+            <button type="submit">Rechercher</button>
+        </form>
+
+        <!-- Div où les résultats seront affichés -->
+        <div id="searchResults"></div>
+    <script src="js/filtrer.js"></script>
+    </div>
+
+    <footer>
+        <p>2023 État de l'étudiant</p>
+    </footer>
+</body>
+</html>
